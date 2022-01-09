@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #register-form {
+            width: 300px;
+            background-color: white;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .input-label{
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 12px;
+
+        }
+        .input-item{
+            width: 100%;
+        }
+        #items-check{
+            margin-top: 12;
+            margin-bottom: 18px;
+        }
+    </style>
+</head>
+<body style="background-color: lightblue;">
+<form  id="register-form"action="" method="get">
+
+<h1 style="text-align: center;">Sign Up</h1>
+<div>
+    <p class="input-lable"> Full Name:</p>
+    <input class="input-item" type="text" name="full-name" placeholder="full-name">
+</div>
+<div>
+   <p class="input-lable">Email:</p>
+    <input class="input-item" type="email" name="email">
+</div>
+<div>
+  <p class="input-lable">Password:</p>
+    <input class="input-item" type="password" name="password">
+</div>
+<div>
+    <p class="input-lable">Confirm Password:</p>
+    <input class="input-item" type="password" name="confirm-password">
+</div>
+<div>
+   <p>Gender:</p>
+    <input type="radio" name="male" value="male">
+    Male</input>
+    <input type="radio" name="female" value="female">
+    Female</input>
+    <input type="radio" name="others" value="others">
+    Others</input>
+</div>
+<div>
+   <p> Security Question: </p>
+    <select name="security-question" id="">
+        <option value="first-pet-name">What was your first pet name
+</option>
+<option value="first-job">What was your first job
+</option>
+<option value="nick-name">What was your nick name
+</option>
+    </select>
+</div>
+<div>
+    <textarea name="answer" id="" cols="30" rows="10">
+    </textarea>
+</div>
+<div>
+    <input id="items-check" type="checkbox" name="terms-conditions" value="accept">I agree to accept terms amd conditions
+</div>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
